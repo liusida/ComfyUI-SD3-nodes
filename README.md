@@ -1,9 +1,14 @@
 # ComfyUI-SD3-nodes
+
 Nodes that support Stable Diffusion 3 Medium and are a little bit easier to understand. They are a wrapper of ComfyUI's built-in nodes.
 
 ![SD3 Default Workflow](workflows/sd3-default-workflow.png)
 
 Download the [JSON format workflow](workflows/sd3-default-workflow.json)
+
+## Requirements
+
+ - Upgrade `ComfyUI` to the latest version. You can either use `ComfyUI-Manager` to update, or run `git pull` in the `ComfyUI` folder.
 
 ## Node List:
 
