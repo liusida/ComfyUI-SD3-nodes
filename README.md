@@ -33,3 +33,8 @@ Load the three CLIPs SD3 borrows:
 
  - `t5xxl`: Choose the T5 XXL model.
 
+### 3. SD3 Empty Latent
+
+ - `resolution`: Choose a resolution from the recommended presets. It follows this guideline: "Resolution should be around 1 megapixel and width/height must be multiples of 64".
+
+ - `batch_size`: The number of images that will be generated in one batch.
