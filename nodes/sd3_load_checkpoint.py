@@ -9,11 +9,11 @@ class SD3LoadCheckpoint (CheckpointLoaderSimple):
                              "shift": ("FLOAT", {"default": 3.0, "min": 0.0, "max": 100.0, "step":0.01}),
                              }}
     RETURN_TYPES = ("MODEL", "VAE")
-    FUNCTION = "load_checkpoint"
+    FUNCTION = "main"
 
     CATEGORY = "sd3"
 
-    def load_checkpoint(self, ckpt_name, shift):
+    def main(self, ckpt_name, shift):
         ckpt_path = folder_paths.get_full_path("checkpoints", ckpt_name)
         model, _, vae, _ = comfy.sd.load_checkpoint_guess_config(ckpt_path, output_vae=True, output_clip=False, embedding_directory=folder_paths.get_folder_paths("embeddings"))
         m = model.clone()
